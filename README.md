@@ -5,17 +5,22 @@ The original video files can be found here https://doi.org/10.17617/3.7F5MGE
 
 The current folder structure is
 
+<pre>
+```
 ├── TRex-tracking-output
-│   ├── hexbugs
-│   │   └── data
-│   ├── locusts-15
-│   │   └── data
-│   ├── locusts-5
-│   │   └── data
-│   └── multi-trials
-│       └── untitled folder
+│   ├── hexbugs
+│   │   └── data
+│   ├── locusts-15
+│   │   └── data
+│   ├── locusts-5
+│   │   └── data
+│   └── multi-trials
+│       └── untitled folder
 ├── YOLO-models
 └── dataset-info-files
+```
+</pre>
+
 
 Where:
 - TRex-tracking-output contains subfolders with per-individual tracking output files (.npz). These files can be used for further data analysis.
