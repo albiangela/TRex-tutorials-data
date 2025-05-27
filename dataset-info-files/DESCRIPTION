@@ -1,0 +1,39 @@
+The videos were collected in the facilities of the Department of Collective Behavior at the Max Planck Institute of Animal Behavior and The Centre for the Advanced Study of Collective Behaviour (CASCB) at the University of Konstanz. 
+
+The filename uses the convention animal_YYYYMMDD_N_fr
+Where:
+- animal identifies the tracked individual (e.g. locust but can be a non-animal, too) 
+- N is for the number of filmed individuals
+- fr is the original frame rate at which videos were recorded
+
+
+Video Set 1: Hexbugs
+1. hexbug_20250129_5_50fps.mp4
+This is a video of 2:47 minutes of 5 hexbugs in a 60cm diameter custom-built arena. The video was originally recorded at 50 frames per second but the playback in this file is set to 30 frames per second.
+
+Video Set 2: Locusts
+2. locusts_20250117_5_5fps.mp4
+This is a video of 1:35 minutes of 5 locusts (Schistocerca gregaria) in a 60cm diameter custom-built arena. The video was originally recorded at 5 frames per second but the playback in this file is set to 30 frames per second.
+
+3. locusts_20250117_15_5fps.mp4
+This is a video of 2:32 minutes of 15 locusts (Schistocerca gregaria) in a 60cm diameter custom-built arena. The video was originally recorded at 5 frames per second but the playback in this file is set to 30 frames per second.
+
+
+ACKNOWLEDGEMENTS
+
+If you use this dataset or any part of the provided material in your work, please acknowledge the following:
+
+1. Contributing
+   Angela Albi, Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany; Centre for the Advanced Study of Collective Behaviour (CASCB), University of Konstanz, Germany; Department of Biology, University of Konstanz, Konstanz, Germany
+   Tristan Walter, Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany; Department of Biology, University of Konstanz, Konstanz, Germany
+   Daniele Carlesso, Centre for the Advanced Study of Collective Behaviour (CASCB), University of Konstanz, Germany; Department of Biology, University of Konstanz, Konstanz, Germany
+
+2. Acknowledge the data collection effort with the following statement:
+   "We acknowledge Angela Albi and Daniele Carlesso for providing access to the dataset and related materials, collected in the facility of the Department of Collective Behavior at the Max Planck Institute of Animal Behavior and the Centre for the Advanced Study of Collective Behaviour (CASCB) at the University of Konstanz. 
+
+For further details, contact: Angela Albi at aalbi@ab.mpg.de or Tristan Walter at twalter@ab.mpg.de
+
+
+This data is licensed under a
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+A copy of the license is included in the files. Also see https://creativecommons.org/licenses/by/4.0/
