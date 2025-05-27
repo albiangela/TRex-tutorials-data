@@ -29,6 +29,6 @@ Where:
 
 The original video files are published [here](https://edmond.mpg.de/dataset.xhtml?persistentId=doi:10.17617/3.7F5MGE)
 
-We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement)
+We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement).
 An initial example Google Colab notebook can be found [here](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)
 
