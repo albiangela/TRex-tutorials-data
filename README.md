@@ -5,7 +5,7 @@ The original video files can be found [here](https://doi.org/10.17617/3.7F5MGE)
 
 The current folder structure is
 
-<pre>
+```
 ├── TRex-tracking-output
 │   ├── hexbugs
 │   │   └── data
@@ -17,7 +17,7 @@ The current folder structure is
 │       └── untitled folder
 ├── YOLO-models
 └── dataset-info-files
-</pre>
+```
 
 
 Where:
