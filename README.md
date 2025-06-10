@@ -9,8 +9,6 @@ The current folder structure is
 ├── TRex-tracking-output
 │   ├── hexbugs
 │   │   └── data
-│   ├── locusts-15
-│   │   └── data
 │   ├── locusts-5
 │   │   └── data
 │   └── multi-trials
