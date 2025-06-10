@@ -33,17 +33,17 @@ The current folder structure is
 
 
 Where:
-- TRex-tracking-output: contains subfolders with per-individual tracking output files (.npz). These files can be used for further data analysis.
+- TRex-tracking-output: contains subfolders with per-individual tracking output files (.npz). These files can be used for further data analysis
 - YOLO-models: contains two yolo models:
   - a 640px YOLO-pose model for locusts with 7 keypoints
   - a 1980px YOLO-segmentation model for hexbugs
-- dataset-info-files: contains information on the data collection methods, description and acknowledgments.
-- model-training-code: contains a jupyter notebook with the commands to train a custom YOLO model (bounding box, keypoint, segmentation). 
+- dataset-info-files: contains information on the data collection methods, description and acknowledgments
+- model-training-code: contains a jupyter notebook with the commands to train a custom YOLO model (bounding box, keypoint, segmentation) and a .py file with useful functions to customize the code
 
 ## Tutorial to train a custom YOLO model
-An example Google Colab notebook to train a custom YOLO model can be found [here](https://colab.research.google.com/drive/1mgATEXF9Q3uwyqn36zARJuN-SCao0vWY?usp=sharing).
+An example Google Colab notebook to train a custom YOLO model can be found [here](https://colab.research.google.com/drive/1mgATEXF9Q3uwyqn36zARJuN-SCao0vWY?usp=sharing)
 
 ## Tutorial for TRex tracking data analysis 
-We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement).
+We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement)
 An initial example Google Colab notebook can be found [here](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)
 
