@@ -30,13 +30,21 @@ The current folder structure is
 
 
 Folder Contents:
-•	TRex-tracking-output/: Contains subfolders with per-individual tracking output files (.npz). These can be used for further data analysis (see below, Tutorial for TRex tracking data analysis).
-•	YOLO-models/: Includes two trained YOLO models:
-	- A 640px YOLO-pose model for locusts (7 keypoints)
-	- A 1980px YOLO-segmentation model for hexbugs
-•	dataset-info-files/: Documentation on data collection methods, dataset descriptions, and acknowledgments.
-•	model-training-code/: A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below).
- 
+- **`TRex-tracking-output/`**  
+  Contains subfolders with per-individual tracking output files (`.npz`). These can be used for further data analysis (see below: [Tutorial for TRex tracking data analysis](#tutorial-for-trex-tracking-data-analysis)).
+
+- **`YOLO-models/`**  
+  Includes two trained YOLO models:  
+  &nbsp;&nbsp;&nbsp;&nbsp;• A **640px YOLO-pose model** for locusts (7 keypoints)  
+  &nbsp;&nbsp;&nbsp;&nbsp;• A **1980px YOLO-segmentation model** for hexbugs
+
+- **`dataset-info-files/`**  
+  Documentation on data collection methods, dataset descriptions, and acknowledgments.
+
+- **`model-training-code/`**  
+  A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
+
+
 ## Tutorial to train a custom YOLO model
 1.	Ultralytics Official Guide
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
