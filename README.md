@@ -39,16 +39,19 @@ Where:
 - model-training-code: contains a jupyter notebook with the commands to train a custom YOLO model (bounding box, keypoint, segmentation) and a .py file with useful functions to customize the code
 
 ## Tutorial to train a custom YOLO model
-	1.	Ultralytics Official Guide
+1.	Ultralytics Official Guide
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
-	2.	Ultralytics HUB
+
+2.	Ultralytics HUB
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook. More details can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
-	3.	Custom Training Notebook
+
+3.	Custom Training Notebook
 We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1mgATEXF9Q3uwyqn36zARJuN-SCao0vWY?usp=sharing) that allows you to:
 	•	Adjust training parameters
 	•	Add custom functions
 	•	Extend functionality for your specific use case
-	4.	Local Training (Jupyter Notebook)
+
+4.	Local Training (Jupyter Notebook)
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
 
 ## Tutorial for TRex tracking data analysis 
