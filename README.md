@@ -1,6 +1,5 @@
 # TRex-tutorial-data
-This repository contains data used to follow [`TRex`](https://trex.run/) tutorials and learn tracking basics.
-
+This repository contains data used to follow [`TRex`](https://trex.run/) tutorials and introduce tracking data analysis.
 The original video files used for the tutorials and that can be used to follow video tutorials step-by-step can be found [here](https://doi.org/10.17617/3.7F5MGE)
 
 The current folder structure is
@@ -30,14 +29,14 @@ The current folder structure is
 ```
 
 
-Where:
-- TRex-tracking-output: contains subfolders with per-individual tracking output files (.npz). These files can be used for further data analysis
-- YOLO-models: contains two yolo models:
-  - a 640px YOLO-pose model for locusts with 7 keypoints
-  - a 1980px YOLO-segmentation model for hexbugs
-- dataset-info-files: contains information on the data collection methods, description and acknowledgments
-- model-training-code: contains a jupyter notebook with the commands to train a custom YOLO model (bounding box, keypoint, segmentation) and a .py file with useful functions to customize the code
-
+Folder Contents:
+	•	TRex-tracking-output/: Contains subfolders with per-individual tracking output files (.npz). These can be used for further data analysis (see below, Tutorial for TRex tracking data analysis).
+	•	YOLO-models/: Includes two trained YOLO models:
+		 - A 640px YOLO-pose model for locusts (7 keypoints)
+		 - A 1980px YOLO-segmentation model for hexbugs
+	•	dataset-info-files/: Documentation on data collection methods, dataset descriptions, and acknowledgments.
+	•	model-training-code/: A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below).
+ 
 ## Tutorial to train a custom YOLO model
 1.	Ultralytics Official Guide
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
