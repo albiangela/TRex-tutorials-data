@@ -1,5 +1,5 @@
 # TRex-tutorial-data
-This repository contains data used to follow TRex tutorials and learn tracking basics (https://trex.run/).
+This repository contains data used to follow [`TRex`](https://trex.run/) tutorials and learn tracking basics.
 
 The original video files used for the tutorials and that can be used to follow video tutorials step-by-step can be found [here](https://doi.org/10.17617/3.7F5MGE)
 
