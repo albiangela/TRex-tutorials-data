@@ -30,12 +30,12 @@ The current folder structure is
 
 
 Folder Contents:
-	•	TRex-tracking-output/: Contains subfolders with per-individual tracking output files (.npz). These can be used for further data analysis (see below, Tutorial for TRex tracking data analysis).
-	•	YOLO-models/: Includes two trained YOLO models:
-		 - A 640px YOLO-pose model for locusts (7 keypoints)
-		 - A 1980px YOLO-segmentation model for hexbugs
-	•	dataset-info-files/: Documentation on data collection methods, dataset descriptions, and acknowledgments.
-	•	model-training-code/: A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below).
+•	TRex-tracking-output/: Contains subfolders with per-individual tracking output files (.npz). These can be used for further data analysis (see below, Tutorial for TRex tracking data analysis).
+•	YOLO-models/: Includes two trained YOLO models:
+	- A 640px YOLO-pose model for locusts (7 keypoints)
+	- A 1980px YOLO-segmentation model for hexbugs
+•	dataset-info-files/: Documentation on data collection methods, dataset descriptions, and acknowledgments.
+•	model-training-code/: A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below).
  
 ## Tutorial to train a custom YOLO model
 1.	Ultralytics Official Guide
