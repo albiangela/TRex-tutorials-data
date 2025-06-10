@@ -55,6 +55,20 @@ We have developed a [customizable Google Colab notebook](https://colab.research.
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
 
 ## Tutorial for TRex tracking data analysis 
-We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement)
-An initial example Google Colab notebook can be found [here](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)
+We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement).
+
+An initial example Google Colab notebook can be found [here](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing). 
+This notebook is a guide for loading centroid trajectory data from background subtraction tracking, using [`TRex`](https://trex.run/).  
+The goal is to transform raw `TRex` output into an `xarray.Dataset` using the [`movement`](https://movement.neuroinformatics.dev/index.html) library for data analysis and visualization.
+
+Summary of steps:
+- Load `TRex` centroid output data
+- Transform the data into a `movement`-compatible `xarray.Dataset`.
+- Simple initial data visualization (to verify basic information)
+
+We will use a set of helper functions (part of this notebook and related scripts) to:
+- Safely load `.npz` files from TRex.
+- Validate the structure of the data.
+- Convert it into an `xarray.Dataset` for use with `movement`.
+
 
