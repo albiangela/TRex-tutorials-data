@@ -2,7 +2,7 @@
 
 This repository contains:
 
-1. data obtained with [`TRex`](https://trex.run/) tutorials that can be used for tutorials on [tracking data analysis](#tutorial-for-trex-tracking-data-analysis) 
+1. Data obtained with [`TRex`](https://trex.run/) that can be used for tutorials on [tracking data analysis](#tutorial-for-trex-tracking-data-analysis). 
 
 2. Two trained YOLO models that can be used following the which [tracking video tutorials](https://www.youtube.com/@TRexTracker)
 
