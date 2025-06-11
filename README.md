@@ -1,9 +1,5 @@
-# TRex-tutorial-data
-This repository contains data used to follow [`TRex`](https://trex.run/) tutorials and introduce tracking data analysis.
-
-The original video files used for the tutorials and that can be used to follow video tutorials step-by-step can be found [here](https://doi.org/10.17617/3.7F5MGE)
-
-🎥 Video tutorials are available on the [TRex YouTube channel](https://www.youtube.com/@TRexTracker)
+# TRex-tutorials-data
+This repository contains data obtained with [`TRex`](https://trex.run/) tutorials for which [videos are available](https://www.youtube.com/@TRexTracker) and introduces [tracking data analysis](#tutorial-for-trex-tracking-data-analysis)).
 
 The current folder structure is
 
@@ -31,8 +27,8 @@ The current folder structure is
 └── model-training-code
 ```
 
+Where: 
 
-Folder Contents:
 - **`TRex-tracking-output/`**  
   Contains subfolders with per-individual tracking output files (`.npz`). These can be used for further data analysis (see below: [Tutorial for TRex tracking data analysis](#tutorial-for-trex-tracking-data-analysis)).
 
@@ -46,9 +42,16 @@ Folder Contents:
 
 - **`model-training-code/`**  
   A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
+  
+
+## 🎥 Video tutorials to learn `TRex` tracking basics
+
+🎥 Video tutorials are available on the [TRex YouTube channel](https://www.youtube.com/@TRexTracker)
+
+The original video files used for the tutorials and that can be used to follow video tutorials step-by-step can be found [here](https://doi.org/10.17617/3.7F5MGE)
 
 
-## Tutorial to train a custom YOLO model
+## 💻 Tutorial to train a custom YOLO model
 1.	Ultralytics Official Guide
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
 
@@ -64,7 +67,7 @@ We have developed a [customizable Google Colab notebook](https://colab.research.
 4.	Local Training (Jupyter Notebook)
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
 
-## Tutorial for TRex tracking data analysis 
+## 👩‍💻 Tutorial for TRex tracking data analysis 
 We are currently developing code to support TRex tracking data analysis using the [movement package](https://github.com/neuroinformatics-unit/movement).
 
 An initial example Google Colab notebook can be found [here](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing). 
