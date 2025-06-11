@@ -1,6 +1,8 @@
 # TRex-tutorial-data
 This repository contains data used to follow [`TRex`](https://trex.run/) tutorials and introduce tracking data analysis.
+
 The original video files used for the tutorials and that can be used to follow video tutorials step-by-step can be found [here](https://doi.org/10.17617/3.7F5MGE)
+
 Video tutorials are available on the [TRex YouTube channel](https://www.youtube.com/@TRexTracker)
 
 The current folder structure is
