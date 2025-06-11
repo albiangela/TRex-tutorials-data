@@ -1,11 +1,12 @@
 # TRex-tutorials-data
 
 This repository contains:
-1- data obtained with [`TRex`](https://trex.run/) tutorials that can be used for tutorials on [tracking data analysis](#tutorial-for-trex-tracking-data-analysis) 
 
-2- Two trained YOLO models that can be used following the which [tracking video tutorials](https://www.youtube.com/@TRexTracker)
+1. data obtained with [`TRex`](https://trex.run/) tutorials that can be used for tutorials on [tracking data analysis](#tutorial-for-trex-tracking-data-analysis) 
 
-3- Code for training custom YOLO models (bounding box, keypoints, segmentation) (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
+2. Two trained YOLO models that can be used following the which [tracking video tutorials](https://www.youtube.com/@TRexTracker)
+
+3. Code for training custom YOLO models (bounding box, keypoints, segmentation) (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
 
 
 The current folder structure is
