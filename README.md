@@ -73,7 +73,7 @@ A local Jupyter notebook version of the training code is also available in the `
 
 ## 👩‍💻 Tutorial for TRex tracking data analysis 
 
-This tutorial is developed in collaboration with the [movement package](https://github.com/neuroinformatics-unit/movement).
+[This tutorial](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp#scrollTo=SVMPHKucBH7-) is developed in collaboration with the [movement package](https://github.com/neuroinformatics-unit/movement).
 
 Use the following Google Colab notebook to analyze centroid tracking data from TRex:
 
