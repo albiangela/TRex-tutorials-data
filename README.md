@@ -60,7 +60,7 @@ The [official Ultralytics documentation](https://docs.ultralytics.com/integratio
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook. More details can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
 
 3.	Custom Training Notebook
-We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1mgATEXF9Q3uwyqn36zARJuN-SCao0vWY?usp=sharing) that allows you to:
+We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1lVE8RXUP2N5w4lTpR4WUGsxedoItPGcy?usp=sharing) that allows you to:
 
 	•	Adjust training parameters
 
