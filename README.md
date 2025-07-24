@@ -53,7 +53,7 @@ The original tutorial video files are available [here](https://doi.org/10.17617/
 
 
 ## 💻 Creating an annotation dataset and training a custom YOLO model
-1.	Create an annotation dataset. An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
+1.	An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
  
 2.	Ultralytics Official Guide with notebooks to train models
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
