@@ -52,14 +52,16 @@ Video tutorials covering TRex tracking basics are available on the [TRex YouTube
 The original tutorial video files are available [here](https://doi.org/10.17617/3.7F5MGE)
 
 
-## 💻 Tutorial to train a custom YOLO model
-1.	Ultralytics Official Guide
+## 💻 Creating an annotation dataset and training a custom YOLO model
+1.	Create an annotation dataset. An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
+ 
+2.	Ultralytics Official Guide with notebooks to train models
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
 
-2.	Ultralytics HUB
+3.	Ultralytics HUB - a simple solution to model training 
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook. More details can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
 
-3.	Custom Training Notebook
+4.	Custom Training Google Colab Notebook
 We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1lVE8RXUP2N5w4lTpR4WUGsxedoItPGcy?usp=sharing) that allows you to:
 
 	•	Adjust training parameters
@@ -77,7 +79,7 @@ This tutorial is developed in collaboration with the [movement package](https://
 
 Use the following Google Colab notebook to analyze centroid tracking data from TRex:
 
-- [Example notebook for TRex centroid data analysis](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing).
+- [Example notebook for TRex centroid data analysis]([https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)).
   
 This notebook is a guide for loading centroid trajectory data from background subtraction tracking, using [`TRex`](https://trex.run/).  
 The goal is to transform raw `TRex` output into an `xarray.Dataset` using the [`movement`](https://movement.neuroinformatics.dev/index.html) library for data analysis and visualization.
