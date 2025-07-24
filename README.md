@@ -59,7 +59,7 @@ The original tutorial video files are available [here](https://doi.org/10.17617/
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
 
 3.	Ultralytics HUB - a simple solution to model training 
-For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook. More details can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
+For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
 
 4.	Custom Training Google Colab Notebook
 We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1lVE8RXUP2N5w4lTpR4WUGsxedoItPGcy?usp=sharing) that allows you to:
