@@ -62,7 +62,7 @@ The [official Ultralytics documentation](https://docs.ultralytics.com/integratio
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
 
 4.	Custom Training Google Colab Notebook
-We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1lVE8RXUP2N5w4lTpR4WUGsxedoItPGcy?usp=sharing) that allows you to:
+We have developed a [customizable Google Colab notebook]([https://colab.research.google.com/drive/1lVE8RXUP2N5w4lTpR4WUGsxedoItPGcy?usp=sharing](https://colab.research.google.com/drive/1pjtDbA7W4bGm6AilfSAsp7umcpQqug0E?usp=sharing) that allows you to:
 
 	•	Adjust training parameters
 
@@ -79,7 +79,7 @@ This tutorial is developed in collaboration with the [movement package](https://
 
 Use the following Google Colab notebook to analyze centroid tracking data from TRex:
 
-- [Example notebook for TRex centroid data analysis]([https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)).
+- [Example notebook for TRex data analysis]([[https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)](https://colab.research.google.com/drive/1vvFPMWrHlLsnPOul8LdsmYqbmy-Y6sWp?usp=sharing)).
   
 This notebook is a guide for loading centroid trajectory data from background subtraction tracking, using [`TRex`](https://trex.run/).  
 The goal is to transform raw `TRex` output into an `xarray.Dataset` using the [`movement`](https://movement.neuroinformatics.dev/index.html) library for data analysis and visualization.
