@@ -62,7 +62,7 @@ The [official Ultralytics documentation](https://docs.ultralytics.com/integratio
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
 
 4.	Custom Training Google Colab Notebook
-We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1pjtDbA7W4bGm6AilfSAsp7umcpQqug0E?usp=sharing) that allows you to:
+We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1fk6Yj6iSKaP5CxlXav11n85f9-SBnGVb?usp=sharing) that allows you to:
 
 	•	Adjust training parameters
 
