@@ -54,7 +54,7 @@ The original raw video files we used for tutorials are available [here](https://
 
 ## 💻 Creating an annotation dataset and training a custom YOLO model 
 1.	An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
-   Alternative annotation software: CVAT, label-studio, Labelbox, SLEAP, and more.
+   Alternative annotation software: [CVAT](https://www.cvat.ai/), [label-studio](https://labelstud.io/), [Labelbox](https://labelbox.com/), and more.
  
 3.	Ultralytics Official Guide with notebooks to train models
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
