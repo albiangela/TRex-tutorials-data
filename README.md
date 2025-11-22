@@ -44,7 +44,7 @@ This repository contains essential resources to help learn and apply animal trac
   Documentation on data collection methods, dataset descriptions, and acknowledgments.
 
 - **`model-training-code/`**  
-  A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below the section to [train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model).
+  A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below the section to [train a custom YOLO model](https://github.com/albiangela/TRex-tutorials-data/blob/main/README.md#-training-a-custom-yolo-model).
   
 
 ## 🎥 Video tutorials for `TRex` tracking basics
