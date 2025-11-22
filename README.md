@@ -63,15 +63,13 @@ The [official Ultralytics documentation](https://docs.ultralytics.com/integratio
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
 
 5.	Custom Training Google Colab Notebook
-We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1fk6Yj6iSKaP5CxlXav11n85f9-SBnGVb?usp=sharing) that allows you to:
+[Repo with Colab Notebook](https://github.com/albiangela/train-custom-YOLO-Colab) and helper utilities to fetch datasets, clean/relabel them, tile images, rebalance splits, and train YOLO models end to end.
 
-	•	Adjust training parameters
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/albiangela/train-custom-YOLO-Colab/blob/main/Train-custom-YOLO-model-example.ipynb)
 
-	•	Add custom functions
 
-	•	Extend functionality for your specific use case
-
-6.	Local Training (Jupyter Notebook)
+7.	Local Training (Jupyter Notebook)
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
 
 Find even more suggestions on the [TRex website](https://trex.run/docs/model_training.html)
