@@ -1,0 +1,16 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+kpt_shape: [7, 3]
+flip_idx: [0, 1, 2, 3, 4, 5, 6]
+
+nc: 1
+names: ['Locusta']
+
+roboflow:
+  workspace: locusta
+  project: locusta-legs
+  version: 9
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/locusta/locusta-legs/dataset/9
