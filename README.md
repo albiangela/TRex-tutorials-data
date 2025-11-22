@@ -44,7 +44,7 @@ This repository contains essential resources to help learn and apply animal trac
   Documentation on data collection methods, dataset descriptions, and acknowledgments.
 
 - **`model-training-code/`**  
-  A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
+  A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below the section to train a custom YOLO model.
   
 
 ## 🎥 Video tutorials for `TRex` tracking basics
@@ -58,7 +58,7 @@ The original raw video files we used for tutorials are available [here](https://
 1.	An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
    Alternative annotation software: [CVAT](https://www.cvat.ai/), [label-studio](https://labelstud.io/), [Labelbox](https://labelbox.com/), and more.
 
-## 💻 Trainig a custom YOLO model
+## 💻 Training a custom YOLO model
 1. 	The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
 
 2. 	Ultralytics HUB - a simple solution for a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
