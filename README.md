@@ -1,6 +1,6 @@
 # TRex-tutorials-data
 
-This repository contains essential resources to help you learn and apply animal tracking analysis using [`TRex`](https://trex.run/) and YOLO-based machine learning models.
+This repository contains essential resources to help learn and apply animal tracking analysis using [`TRex`](https://trex.run/) and YOLO-based machine learning models.
 
 ## 📂 Repository Structure
 
@@ -45,24 +45,25 @@ This repository contains essential resources to help you learn and apply animal 
   A Jupyter notebook for training custom YOLO models (bounding box, keypoints, segmentation), along with a Python script containing helper functions to customize the training process (see below: [Tutorial to train a custom YOLO model](#tutorial-to-train-a-custom-yolo-model)).
   
 
-## 🎥 Video tutorials to learn `TRex` tracking basics
+## 🎥 Video tutorials for `TRex` tracking basics
 
 Video tutorials covering TRex tracking basics are available on the [TRex YouTube Channel](https://www.youtube.com/@TRexTracker)
 
-The original tutorial video files are available [here](https://doi.org/10.17617/3.7F5MGE)
+The original raw video files we used for tutorials are available [here](https://doi.org/10.17617/3.7F5MGE) and can be used to follow the tutorials step-by-step.
 
 
-## 💻 Creating an annotation dataset and training a custom YOLO model
+## 💻 Creating an annotation dataset and training a custom YOLO model 
 1.	An example of how to do this on Roboflow can be found in the [Roboflow-annotations_and_YOLO-training_tutorial.pdf](https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf) included in this repository.
+   Alternative annotation software: [CVAT](https://www.cvat.ai/), [label-studio](https://labelstud.io/), [Labelbox](https://labelbox.com/), and more.
  
-2.	Ultralytics Official Guide with notebooks to train models
+3.	Ultralytics Official Guide with notebooks to train models
 The [official Ultralytics documentation](https://docs.ultralytics.com/integrations/jupyterlab/#what-are-the-key-features-of-jupyterlab-that-make-it-suitable-for-yolo11-projects) provides detailed instructions for training YOLO models in JupyterLab environments.
 
-3.	Ultralytics HUB - a simple solution to model training 
+4.	Ultralytics HUB - a simple solution to model training 
 For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.ultralytics.com/home) allows you to upload your dataset and train a model through a simple interface or via a Google Colab notebook.
 
-4.	Custom Training Google Colab Notebook
-We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1pjtDbA7W4bGm6AilfSAsp7umcpQqug0E?usp=sharing) that allows you to:
+5.	Custom Training Google Colab Notebook
+We have developed a [customizable Google Colab notebook](https://colab.research.google.com/drive/1fk6Yj6iSKaP5CxlXav11n85f9-SBnGVb?usp=sharing) that allows you to:
 
 	•	Adjust training parameters
 
@@ -70,8 +71,10 @@ We have developed a [customizable Google Colab notebook](https://colab.research.
 
 	•	Extend functionality for your specific use case
 
-5.	Local Training (Jupyter Notebook)
+6.	Local Training (Jupyter Notebook)
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
+
+Find even more suggestions on the [TRex website](https://trex.run/docs/model_training.html)
 
 ## 👩‍💻 Tutorial for TRex tracking data analysis 
 
@@ -94,3 +97,17 @@ Analysis Overview:
 - Simple initial data visualization (to verify basic information)
 
 This setup ensures efficient and structured analysis of animal tracking data, from initial tracking to advanced model training and analysis.
+
+## 🔗 Reference Links Summary
+
+| Topic | Link |
+|-------|------|
+| TRex Docs | https://trex.run/docs/ |
+| YOLO Segmentation Format | https://docs.ultralytics.com/datasets/segment/ |
+| YOLO Detection Format | https://docs.ultralytics.com/datasets/detect/ |
+| Instance Segmentation Intro | https://blog.roboflow.com/instance-segmentation/ |
+| Annotation and Training Intro | https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf |
+| Colab Notebook YOLO model training| https://colab.research.google.com/drive/1fk6Yj6iSKaP5CxlXav11n85f9-SBnGVb?usp=sharing |
+| Training Guide | https://trex.run/docs/model_training.html |
+| Example Data Tutorials| https://keeper.mpdl.mpg.de/d/12882cf6c0c14d7ca981/ |
+
