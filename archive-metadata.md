@@ -23,13 +23,16 @@
 )
 
 ## Title
+Train a custom YOLO model 
 
 ## Author
+Angela Albi
 
 ## Description
+Notebook and helper utilities to fetch datasets, clean/relabel them, tile images, rebalance splits, and train YOLO models end to end. This is intended to help creating a YOLO-based machine learning model for animal detection and tracking using TRex
 
 ## Year
-
+2025
 ## Institute
-
+Max Planck Institute of Animal Behavior
 ## DOI
