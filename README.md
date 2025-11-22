@@ -14,16 +14,15 @@ This repository contains essential resources to help learn and apply animal trac
 │       └── data
 ├── YOLO-models
 │   └── hexbugs-annotation-dataset
-│       └── hexseg.v2i.yolov11
-│           ├── test
-│           │   ├── images
-│           │   └── labels
-│           ├── train
-│           │   ├── images
-│           │   └── labels
-│           └── valid
-│               ├── images
-│               └── labels
+│       ├── test
+│       │   ├── images
+│       │   └── labels
+│       ├── train
+│       │   ├── images
+│       │   └── labels
+│       └── valid
+│           ├── images
+│           └── labels
 ├── dataset-info-files
 └── model-training-code
 ```
