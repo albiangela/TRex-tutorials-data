@@ -69,7 +69,7 @@ For a streamlined, user-friendly experience, the [Ultralytics HUB](https://hub.u
 https://colab.research.google.com/github/albiangela/train-custom-YOLO-Colab/blob/main/Train-custom-YOLO-model-example.ipynb)
 
 
-7.	Local Training (Jupyter Notebook)
+7.	Local Training (Jupyter Notebook) [work in progress]
 A local Jupyter notebook version of the training code is also available in the `model-training-code` folder. This version is ideal if you prefer working on your local machine or a specific computing environment.
 
 Find even more suggestions on the [TRex website](https://trex.run/docs/model_training.html)
