@@ -104,7 +104,7 @@ This setup ensures efficient and structured analysis of animal tracking data, fr
 | YOLO Detection Format | https://docs.ultralytics.com/datasets/detect/ |
 | Instance Segmentation Intro | https://blog.roboflow.com/instance-segmentation/ |
 | Annotation and Training Intro | https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf |
-| Colab Notebook YOLO model training| https://colab.research.google.com/drive/1fk6Yj6iSKaP5CxlXav11n85f9-SBnGVb?usp=sharing |
+| Colab Notebook YOLO model training| https://github.com/albiangela/train-custom-YOLO-Colab |
 | Training Guide | https://trex.run/docs/model_training.html |
 | Example Data Tutorials| https://keeper.mpdl.mpg.de/d/12882cf6c0c14d7ca981/ |
 
