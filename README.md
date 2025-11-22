@@ -5,6 +5,9 @@ This repository contains essential resources to help learn and apply animal trac
 ## 📂 Repository Structure
 
 ```
+.
+├── Roboflow-annotations_and_YOLO-training_tutorial.pdf
+├── TRex Installation Instructions.html
 ├── TRex-tracking-output
 │   ├── hexbugs
 │   │   └── data
