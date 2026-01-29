@@ -111,3 +111,20 @@ Examples
    </div>
 
 
+.. |Trackinggr| raw:: html
+
+   <span style="color:green;">Tracking</span>
+
+3) Tracking
+--------------------------------------
+
+Once the objects of interest are detected in each frame, the next step is to track them across frames.
+|TRackinggr| means entities in one frame with entities in a future frame.
+
+
+.. figure:: ./images/TRex-workflow.015.jpeg
+   :alt: Short alt text
+   :align: center
+   :width: 60%
+
+   Tracking: keep the identity of the detected dinosaurs across frames.
