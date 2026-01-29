@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Create a Custom Dataset for a Machine Learning Model</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; }
+    main { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    h2 { font-size: 1.35rem; margin-top: 28px; }
+    p, li { font-size: 1rem; }
+    .meta { opacity: 0.75; margin-bottom: 22px; }
+    .card { border: 1px solid rgba(127,127,127,0.35); border-radius: 14px; padding: 16px 18px; margin: 14px 0; }
+    .callout { border-left: 4px solid rgba(127,127,127,0.65); padding: 12px 14px; border-radius: 10px; background: rgba(127,127,127,0.08); }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 0.95em; }
+    a { text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>How to Create a Custom Dataset for a ML Model</h1>
+      <p class="meta">This guide walks you through dataset creation (frame selection + annotation) and training a custom YOLO-based model.</p>
+    </header>
+
+    <section class="card">
+      <h2>1) Decide what model you want to train</h2>
+      <p>
+        Before creating an annotation dataset, decide which type of task you want to train.
+        At the moment, we support <strong>YOLO-based models</strong> (Ultralytics), such as detection, segmentation, or pose.
+      </p>
+      <p>
+        Browse the supported tasks here:
+        <a href="https://docs.ultralytics.com/tasks/" target="_blank" rel="noopener noreferrer">
+          Ultralytics YOLO Tasks
+        </a>
+      </p>
+
+      <div class="callout">
+        <strong>Tip:</strong> Your choice here affects how you annotate:
+        <ul>
+          <li><strong>Detection</strong> → bounding boxes</li>
+          <li><strong>Segmentation</strong> → polygons/masks</li>
+          <li><strong>Pose</strong> → keypoints</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) Plan your dataset and choose videos</h2>
+      <p>
+        Pick videos that represent the full variability of what you want the model to handle.
+        The goal is to avoid training on a narrow “best-case” subset.
+      </p>
+      <ul>
+        <li>Include different backgrounds, lighting, camera angles, and distances.</li>
+        <li>Include easy and hard examples (small targets, partial visibility, motion blur, reflections, etc.).</li>
+        <li>Try to cover all relevant environments and recording conditions.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3) Create an annotation dataset (extract frames + label)</h2>
+      <p>
+        The first practical step is to create an annotation dataset. This means:
+        extracting a set of frames from your videos and drawing labels around the target(s) of interest.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin-top:0;">Recommended tool: Roboflow</h3>
+          <p>We often use Roboflow because it’s fast and user-friendly.</p>
+          <ul>
+            <li>Roboflow has a free version, but uploaded data becomes <strong>public</strong> (visible in the “Roboflow universe”).</li>
+            <li>New accounts typically include <strong>14 days of private projects</strong> (useful for a short annotation sprint).</li>
+          </ul>
+          <p>
+            Setup instructions:
+            <a href="https://github.com/albiangela/TRex-tutorials-data?tab=readme-ov-file#creating-an-annotation-dataset" target="_blank" rel="noopener noreferrer">
+              Roboflow Setup Guide
+            </a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Private/local alternatives</h3>
+          <p>If you need the data to remain fully private, consider:</p>
+          <ul>
+            <li><strong>CVAT</strong> (local or self-hosted)</li>
+            <li><strong>Label Studio</strong> (local or self-hosted)</li>
+          </ul>
+          <p>
+            Label Studio tutorial:
+            <a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html" target="_blank" rel="noopener noreferrer">
+              Label Studio Tutorial
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <h3>Frame extraction recommendations</h3>
+      <ul>
+        <li><strong>Extract ~25–30 frames per video</strong> as a starting point.</li>
+        <li>It can help to extract more than needed, then select frames to annotate roughly at random.</li>
+        <li>Trim irrelevant parts (e.g., before/after the scene of interest) so those frames aren’t extracted.</li>
+        <li>Annotate frames from <strong>all</strong> videos (don’t concentrate on just a few).</li>
+      </ul>
+
+      <h3>Annotation guidelines</h3>
+      <ul>
+        <li>Label <strong>all visible targets</strong> in each frame (or all visible parts, if partially occluded).</li>
+        <li>Make bounding boxes <strong>tight</strong> around the target with as little background as possible.</li>
+        <li>Be consistent in how you treat partial visibility and edge-of-frame cases.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Consistency matters:</strong> the same visual scenario should be labeled the same way across the dataset.
+        This reduces confusion for the model and usually improves performance.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4) Export the dataset in YOLO format</h2>
+      <p>
+        Once annotation is complete, export your dataset in a YOLO-compatible format.
+        Most tools offer an export option for YOLO/Ultralytics.
+      </p>
+      <ul>
+        <li>Keep a clear <code>train/val</code> split (and <code>test</code> if you use it).</li>
+        <li>Verify that labels align with images after export (spot-check a few samples).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5) Training a model</h2>
+      <p>
+        After exporting, you can train a custom YOLO-based model using Ultralytics.
+      </p>
+
+      <ul>
+        <li>Training instructions:
+          <a href="https://trex.run/docs/model_training.html" target="_blank" rel="noopener noreferrer">
+            Model Training Documentation
+          </a>
+        </li>
+        <li>Custom Colab notebook (with extras like label changes and tiling):
+          <a href="https://github.com/albiangela/train-custom-YOLO-Colab" target="_blank" rel="noopener noreferrer">
+            Custom Training Colab Notebook
+          </a>
+        </li>
+      </ul>
+
+      <div class="callout">
+        <strong>Practical note:</strong> If your targets are small, tiling can help by increasing effective resolution.
+        If labels or class names change over time, use a consistent mapping to avoid broken datasets.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>6) Iterate</h2>
+      <p>
+        Dataset building is iterative. After your first training run:
+      </p>
+      <ul>
+        <li>Inspect mistakes (false positives/negatives) and add frames that represent those failure cases.</li>
+        <li>Balance the dataset if one condition dominates (e.g., only one background or one viewpoint).</li>
+        <li>Repeat: annotate → retrain → evaluate.</li>
+      </ul>
+      <p>
+        If anything is unclear or you run into issues during setup, annotation, or export, let us know.
+      </p>
+    </section>
+
+    <footer class="meta" style="margin-top:28px;">
+      <p>Last updated: <span id="date"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
