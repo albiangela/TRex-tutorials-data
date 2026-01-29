@@ -133,9 +133,10 @@ Here are three example videos showing different detection methods in TRex:
      });
    </script>
 
-- `Background subtraction <_static/example_bsub_fish.mov?raw=1>`__
-- `Background subtraction + ML custom model <_static/example_ml_loc.mov?raw=1>`__
-- `ML custom model <_static/example_ml_shark.mov?raw=1>`__
+- `Background subtraction <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_bsub_fish.mov>`__
+- `Background subtraction + ML custom model <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_ml_loc.mov>`__
+- `ML custom model <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_ml_shark.mov>`__
+
 
 .. |Trackinggr| raw:: html
 
