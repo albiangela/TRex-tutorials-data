@@ -89,49 +89,49 @@ Examples
 
 Here are three example videos showing different detection methods in TRex:
 
+..
+   .. raw:: html
 
-.. raw:: html
+      <style>
+      .video-slider {display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:12px 0;}
+      .video-slide  {min-width:340px; scroll-snap-align:start; position:relative;}
+      .video-slide video {width:100%; height:200px; border-radius:8px; border:2px solid #ccc;}
+      .fs-btn {position:absolute; top:8px; right:8px; padding:6px 8px; border:0; border-radius:6px;
+               background:#111; color:#fff; font-size:12px; cursor:pointer; opacity:0.85;}
+      .fs-btn:hover {opacity:1;}
+      </style>
 
-   <style>
-     .video-slider {display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:12px 0;}
-     .video-slide  {min-width:340px; scroll-snap-align:start; position:relative;}
-     .video-slide video {width:100%; height:200px; border-radius:8px; border:2px solid #ccc;}
-     .fs-btn {position:absolute; top:8px; right:8px; padding:6px 8px; border:0; border-radius:6px;
-              background:#111; color:#fff; font-size:12px; cursor:pointer; opacity:0.85;}
-     .fs-btn:hover {opacity:1;}
-   </style>
+      <div class="video-slider">
+      <div class="video-slide">
+         <p><strong>Background subtraction</strong></p>
+         <video controls playsinline src="_static/example_bsub_fish.mov"></video>
+      </div>
+      <div class="video-slide">
+         <p><strong>Background subtraction and ML custom model</strong></p>
+         <video controls playsinline src="_static/example_ml_loc.mov"></video>
+      </div>
+      <div class="video-slide">
+         <p><strong>ML custom model</strong></p>
+         <video controls playsinline src="_static/example_ml_shark.mov"></video>
+      </div>
+      </div>
 
-   <div class="video-slider">
-     <div class="video-slide">
-       <p><strong>Background subtraction</strong></p>
-       <video controls playsinline src="_static/example_bsub_fish.mov"></video>
-     </div>
-     <div class="video-slide">
-       <p><strong>Background subtraction and ML custom model</strong></p>
-       <video controls playsinline src="_static/example_ml_loc.mov"></video>
-     </div>
-     <div class="video-slide">
-       <p><strong>ML custom model</strong></p>
-       <video controls playsinline src="_static/example_ml_shark.mov"></video>
-     </div>
-   </div>
-
-   <script>
-     document.querySelectorAll('.video-slide video').forEach((video) => {
-       const btn = document.createElement('button');
-       btn.className = 'fs-btn';
-       btn.type = 'button';
-       btn.textContent = 'Full screen';
-       btn.addEventListener('click', () => {
-         if (video.requestFullscreen) {
-           video.requestFullscreen();
-         } else if (video.webkitEnterFullscreen) {
-           video.webkitEnterFullscreen(); // iOS Safari
-         }
-       });
-       video.parentElement.appendChild(btn);
-     });
-   </script>
+      <script>
+      document.querySelectorAll('.video-slide video').forEach((video) => {
+         const btn = document.createElement('button');
+         btn.className = 'fs-btn';
+         btn.type = 'button';
+         btn.textContent = 'Full screen';
+         btn.addEventListener('click', () => {
+            if (video.requestFullscreen) {
+            video.requestFullscreen();
+            } else if (video.webkitEnterFullscreen) {
+            video.webkitEnterFullscreen(); // iOS Safari
+            }
+         });
+         video.parentElement.appendChild(btn);
+      });
+      </script>
 
 - `Background subtraction <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_bsub_fish.mov>`__
 - `Background subtraction + ML custom model <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_ml_loc.mov>`__
