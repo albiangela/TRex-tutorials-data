@@ -60,8 +60,11 @@ There are multiple ways of detecting individuals. The most common are background
 
 .. raw:: html
 
-   <div style="text-align:center;">
-     <video controls playsinline width="640" src="_static/gif_detection_gui.mov"></video>
+   <div class="example-video-grid example-video-grid-single">
+     <article class="example-video">
+       <h3>Detection preview in TRex</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/gif_detection_gui.mp4"></video>
+     </article>
    </div>
 
 
@@ -87,55 +90,37 @@ In order to facilitate the decision, we provide a decision tree:
 Examples
 =============================================
 
-Here are three example videos showing different detection methods in TRex:
+Here are three downloadable example videos showing different detection methods in TRex.
+You can preview each one in the page before downloading the source video file.
 
-..
-   .. raw:: html
+.. raw:: html
 
-      <style>
-      .video-slider {display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:12px 0;}
-      .video-slide  {min-width:340px; scroll-snap-align:start; position:relative;}
-      .video-slide video {width:100%; height:200px; border-radius:8px; border:2px solid #ccc;}
-      .fs-btn {position:absolute; top:8px; right:8px; padding:6px 8px; border:0; border-radius:6px;
-               background:#111; color:#fff; font-size:12px; cursor:pointer; opacity:0.85;}
-      .fs-btn:hover {opacity:1;}
-      </style>
-
-      <div class="video-slider">
-      <div class="video-slide">
-         <p><strong>Background subtraction</strong></p>
-         <video controls playsinline src="_static/example_bsub_fish.mov"></video>
-      </div>
-      <div class="video-slide">
-         <p><strong>Background subtraction and ML custom model</strong></p>
-         <video controls playsinline src="_static/example_ml_loc.mov"></video>
-      </div>
-      <div class="video-slide">
-         <p><strong>ML custom model</strong></p>
-         <video controls playsinline src="_static/example_ml_shark.mov"></video>
-      </div>
-      </div>
-
-      <script>
-      document.querySelectorAll('.video-slide video').forEach((video) => {
-         const btn = document.createElement('button');
-         btn.className = 'fs-btn';
-         btn.type = 'button';
-         btn.textContent = 'Full screen';
-         btn.addEventListener('click', () => {
-            if (video.requestFullscreen) {
-            video.requestFullscreen();
-            } else if (video.webkitEnterFullscreen) {
-            video.webkitEnterFullscreen(); // iOS Safari
-            }
-         });
-         video.parentElement.appendChild(btn);
-      });
-      </script>
-
-- `Background subtraction <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_bsub_fish.mov>`__
-- `Background subtraction + ML custom model <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_ml_loc.mov>`__
-- `ML custom model <https://raw.githubusercontent.com/albiangela/TRex-tutorials-data/main/tutorial-pages/_static/example_ml_shark.mov>`__
+   <div class="example-video-grid">
+     <article class="example-video">
+       <h3>Background subtraction</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/example_bsub_fish_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 10.5 MiB</p>
+       <a class="example-video-download" href="_static/example_bsub_fish.mp4" download="example_bsub_fish.mp4" aria-label="Download example_bsub_fish.mp4">
+         Download HD video (example_bsub_fish.mp4)
+       </a>
+     </article>
+     <article class="example-video">
+       <h3>Background subtraction + ML custom model</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/example_ml_loc_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 4.5 MiB</p>
+       <a class="example-video-download" href="_static/example_ml_loc.mp4" download="example_ml_loc.mp4" aria-label="Download example_ml_loc.mp4">
+         Download HD video (example_ml_loc.mp4)
+       </a>
+     </article>
+     <article class="example-video">
+       <h3>ML custom model</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/example_ml_shark_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 28.6 MiB</p>
+       <a class="example-video-download" href="_static/example_ml_shark.mp4" download="example_ml_shark.mp4" aria-label="Download example_ml_shark.mp4">
+         Download HD video (example_ml_shark.mp4)
+       </a>
+     </article>
+   </div>
 
 
 .. |Trackinggr| raw:: html
