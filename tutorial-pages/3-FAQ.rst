@@ -29,8 +29,15 @@ If ``track_max_individuals`` is set incorrectly, TRex may struggle to maintain s
 
 .. raw:: html
 
-   <div style="text-align:center;">
-     <video controls playsinline width="640" src="_static/max_speed_nIDs.mov"></video>
+   <div class="example-video-grid example-video-grid-single">
+     <article class="example-video">
+       <h3>IDs changing between frames</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/max_speed_nIDs_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 12.0 MiB</p>
+       <a class="example-video-download" href="_static/max_speed_nIDs.mp4" download="max_speed_nIDs.mp4" aria-label="Download max_speed_nIDs.mp4">
+         Download HD video (max_speed_nIDs.mp4)
+       </a>
+     </article>
    </div>
 
 **What to try:**
@@ -53,8 +60,15 @@ When the object is detected again, TRex may start a new tracklet instead of cont
 
 .. raw:: html
 
-   <div style="text-align:center;">
-     <video controls playsinline width="640" src="_static/hexbug_20250129_5_example_max_speed.mp4"></video>
+   <div class="example-video-grid example-video-grid-single">
+     <article class="example-video">
+       <h3>Tracklets stopping when max speed is too low</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/hexbug_20250129_5_example_max_speed_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 7.4 MiB</p>
+       <a class="example-video-download" href="_static/hexbug_20250129_5_example_max_speed.mp4" download="hexbug_20250129_5_example_max_speed.mp4" aria-label="Download hexbug_20250129_5_example_max_speed.mp4">
+         Download HD video (hexbug_20250129_5_example_max_speed.mp4)
+       </a>
+     </article>
    </div>
 
 Try increasing ``track_max_speed`` so that it better reflects the maximum movement speed of your objects in the video.
@@ -67,8 +81,11 @@ If your conversion you see a lot of noise that outercounts the real objects, thi
 
 .. raw:: html
 
-   <div style="text-align:center;">
-     <video controls playsinline width="640" src="_static/hexbug_20250129_5_detection_noise.mp4"></video>
+   <div class="example-video-grid example-video-grid-single">
+     <article class="example-video">
+       <h3>Noise tracked during detection</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/hexbug_20250129_5_detection_noise.mp4"></video>
+     </article>
    </div>
 
 To reduce noise being tracked, we recommend first trying to remove it during the conversion phase, and then, if needed, also during the tracking phase.
@@ -103,8 +120,15 @@ This makes tracking more selective and can help prevent noisy detections from be
 
 .. raw:: html
 
-   <div style="text-align:center;">
-     <video controls playsinline width="640" src="_static/hexbug_20250129_5_5_increasing_track_threshold.mp4"></video>
+   <div class="example-video-grid example-video-grid-single">
+     <article class="example-video">
+       <h3>Increasing track threshold</h3>
+       <video controls autoplay muted loop playsinline preload="metadata" src="_static/hexbug_20250129_5_5_increasing_track_threshold_web.mp4"></video>
+       <p class="example-video-meta">MP4 video, 12.9 MiB</p>
+       <a class="example-video-download" href="_static/hexbug_20250129_5_5_increasing_track_threshold.mp4" download="hexbug_20250129_5_5_increasing_track_threshold.mp4" aria-label="Download hexbug_20250129_5_5_increasing_track_threshold.mp4">
+         Download HD video (hexbug_20250129_5_5_increasing_track_threshold.mp4)
+       </a>
+     </article>
    </div>
 
 3. Check other tracking parameters if artefacts remain
