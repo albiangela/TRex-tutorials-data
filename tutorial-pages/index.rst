@@ -3,14 +3,14 @@
 TRex Tutorials
 ==============
 
-Welcome! |trex|_ is a versatile tracking software for analyzing the movement and
+Welcome! `TRex <https://trex.run>`_ is a versatile tracking software for analyzing the movement and
 posture of animals (or any other moving objects) in video. These tutorials walk
 you from your first project all the way through training your own detection
 models, with a separate FAQ for the issues that come up most often along the way.
 
 .. epigraph::
 
-   **Coming to the workshop?** Please install |trex|_ and download the example
+   **Coming to the workshop?** Please install `TRex <https://trex.run>`_ and download the example
    dataset **before** the workshop starts — see `Installation and Workshop
    Setup <install.rst>`_. If this is your first time tracking anything, also
    skim `Introduction to Tracking with TRex <1-intro-detection-tracking.rst>`_
@@ -24,18 +24,18 @@ videos, models, and analysis notebooks on the
 Before you start
 ----------------
 
-- `Installation and Workshop Setup <install.rst>`_ — install |trex|_ with
+- `Installation and Workshop Setup <install.rst>`_ — install `TRex <https://trex.run>`_ with
   Miniforge (Windows, macOS, Linux), download the workshop dataset, and
   bookmark the analysis notebooks for after tracking.
 
 Get oriented
 ------------
 
-Start here if this is your first time using |trex|_ or you want to make sure
+Start here if this is your first time using `TRex <https://trex.run>`_ or you want to make sure
 your recording setup will give you tractable data.
 
 - `Introduction to Tracking with TRex <1-intro-detection-tracking.rst>`_ —
-  what tracking actually involves, what each stage of the |trex|_ workflow
+  what tracking actually involves, what each stage of the `TRex <https://trex.run>`_ workflow
   does, and the recording choices that matter most before you ever open the
   app.
 
