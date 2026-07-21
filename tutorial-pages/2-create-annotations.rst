@@ -46,7 +46,7 @@ Alternatives - if you need the data to remain fully local:
 
 - **CVAT** (local or self-hosted)
 - **Label Studio** (local or self-hosted) - `tutorial <https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html>`_
-- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format. See `Annotating with TRex`_ below for the full walkthrough.
+- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format. See `Annotating with TRex (UNDER DEVELOPMENT)`_ below for the full walkthrough.
 
 Frame extraction recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -75,8 +75,8 @@ Most tools offer an export option for YOLO/Ultralytics.
 - Keep a clear ``train/val/test`` split (usually 70%/20%/10% of the annotated dataset).
 - Verify that labels align with images after export (spot-check a few samples).
 
-Annotating with TRex
---------------------
+Annotating with TRex (UNDER DEVELOPMENT)
+-----------------------------------------
 
 If you'd rather annotate directly inside TRex instead of using Roboflow, CVAT, or Label Studio, TRex has a built-in annotation window described below.
 

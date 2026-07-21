@@ -71,8 +71,8 @@ We'll use a small set of example videos during the workshop. Please download
 them ahead of time and save them somewhere you can find again on your laptop:
 
 - `Example videos for multi-object tracking <https://doi.org/10.17617/3.7F5MGE>`_
-  — multi-individual videos used in :doc:`tutorials` and
-  :doc:`2-create-annotations`.
+  — multi-individual videos used in `Tutorials <tutorials.rst>`_ and
+  `Creating an Annotation Dataset <2-create-annotations.rst>`_.
 
 You can also browse and watch the
 `TRex YouTube channel <https://www.youtube.com/@TRexTracker>`_ in advance to

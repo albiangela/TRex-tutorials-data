@@ -11,9 +11,10 @@ models, with a separate FAQ for the issues that come up most often along the way
 .. epigraph::
 
    **Coming to the workshop?** Please install |trex| and download the example
-   dataset **before** the workshop starts — see :doc:`install`. If this is your
-   first time tracking anything, also skim :doc:`1-intro-detection-tracking` so
-   the vocabulary on day one is familiar.
+   dataset **before** the workshop starts — see `Installation and Workshop
+   Setup <install.rst>`_. If this is your first time tracking anything, also
+   skim `Introduction to Tracking with TRex <1-intro-detection-tracking.rst>`_
+   so the vocabulary on day one is familiar.
 
 You can watch the video versions on the
 `TRex YouTube channel <https://www.youtube.com/@TRexTracker>`_, and find example
@@ -23,9 +24,9 @@ videos, models, and analysis notebooks on the
 Before you start
 ----------------
 
-- :doc:`install` — install |trex| with Miniforge (Windows, macOS, Linux),
-  download the workshop dataset, and bookmark the analysis notebooks for after
-  tracking.
+- `Installation and Workshop Setup <install.rst>`_ — install |trex| with
+  Miniforge (Windows, macOS, Linux), download the workshop dataset, and
+  bookmark the analysis notebooks for after tracking.
 
 Get oriented
 ------------
@@ -33,9 +34,10 @@ Get oriented
 Start here if this is your first time using |trex| or you want to make sure
 your recording setup will give you tractable data.
 
-- :doc:`1-intro-detection-tracking` — what tracking actually involves, what each
-  stage of the |trex| workflow does, and the recording choices that matter most
-  before you ever open the app.
+- `Introduction to Tracking with TRex <1-intro-detection-tracking.rst>`_ —
+  what tracking actually involves, what each stage of the |trex| workflow
+  does, and the recording choices that matter most before you ever open the
+  app.
 
 Hands-on tutorials
 ------------------
@@ -43,21 +45,23 @@ Hands-on tutorials
 Step-by-step walkthroughs using example videos you can download and follow
 along with.
 
-- :doc:`tutorials` — the main end-to-end tutorial: setting up a project,
-  detecting and tracking individuals, tuning parameters, working with tracklets,
-  correcting identities (manually and with Visual Identification), posture, and
-  a second walkthrough using a YOLO pose model.
-- :doc:`2-create-annotations` — when the built-in detection isn't enough:
-  choosing an annotation tool (including TRex's own built-in annotation
-  window), collecting frames, and labeling them.
-- :doc:`3-create-custom-model` — training your own YOLO detection,
-  segmentation, or pose model on the dataset you just annotated.
+- `Tutorials <tutorials.rst>`_ — the main end-to-end tutorial: setting up a
+  project, detecting and tracking individuals, tuning parameters, working
+  with tracklets, correcting identities (manually and with Visual
+  Identification), posture, and a second walkthrough using a YOLO pose model.
+- `Creating an Annotation Dataset <2-create-annotations.rst>`_ — when the
+  built-in detection isn't enough: choosing an annotation tool (including
+  TRex's own built-in annotation window), collecting frames, and labeling
+  them.
+- `Training a Custom YOLO Model <3-create-custom-model.rst>`_ — training
+  your own YOLO detection, segmentation, or pose model on the dataset you
+  just annotated.
 
 Reference and help
 ------------------
 
-- :doc:`4-FAQ` — common problems with tracking, identity assignment, and
-  parameter tuning, with concrete things to try.
+- `FAQ <4-FAQ.rst>`_ — common problems with tracking, identity assignment,
+  and parameter tuning, with concrete things to try.
 
 .. toctree::
    :hidden:
