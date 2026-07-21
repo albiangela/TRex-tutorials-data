@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# R
+.Rhistory
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Sphinx build output
+tutorial-pages/_build/
+tutorial-pages/_static/
