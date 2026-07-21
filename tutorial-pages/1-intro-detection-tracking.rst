@@ -155,3 +155,8 @@ Once the objects of interest are detected in each frame, the next step is to tra
    :width: 60%
 
    Tracking: keep the identity of the detected dinosaurs across frames.
+
+Next steps
+--------------------------------------
+
+If a custom model is needed, continue to `Creating Annotations with TRex <2-create-annotations.rst>`_.

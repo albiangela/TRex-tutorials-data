@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRex Quick Start Guide</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #222;
+      background: #fff;
+    }
+
+    h1, h2 {
+      color: #111;
+    }
+
+    h1 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3em;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, monospace;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 12px 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f4f4f4;
+    }
+
+    a {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>TRex Quick Start Guide</h1>
+
+  <p>This short guide explains how to install TRex, open it, and navigate annotated frames. Additional links for installation, annotations, model training, detections, and tracking are listed at the end.</p>
+
+  <h2>1. Install TRex</h2>
+
+  <p>First, install <strong>Miniforge</strong>, which is needed to create the TRex environment.</p>
+
+  <p>
+    Download Miniforge here:<br />
+    <a href="https://conda-forge.org/download/" target="_blank" rel="noopener noreferrer">https://conda-forge.org/download/</a>
+  </p>
+
+  <p>Then open a terminal:</p>
+
+  <ul>
+    <li><strong>Windows:</strong> search for and open <strong>Miniforge Prompt</strong></li>
+    <li><strong>macOS/Linux:</strong> open <strong>Terminal</strong></li>
+  </ul>
+
+  <p>Create a new TRex environment:</p>
+
+  <pre><code>conda create -n beta -c trex-beta trex</code></pre>
+
+  <p>When asked to proceed, type <code>y</code> and press <strong>Enter</strong>.</p>
+
+  <p>For the full installation documentation, see:</p>
+  <ul>
+    <li><a href="https://trex.run/docs/install.html" target="_blank" rel="noopener noreferrer">TRex installation documentation</a></li>
+  </ul>
+
+  <h2>2. Open TRex</h2>
+
+  <p>Activate the TRex environment:</p>
+
+  <pre><code>conda activate beta</code></pre>
+
+  <p>Start TRex:</p>
+
+  <pre><code>trex</code></pre>
+
+  <h2>3. Decide what model you want to train</h2>
+
+  <p>
+    Before creating an annotation dataset, decide which type of task you want to train.
+    At the moment, TRex supports <strong>YOLO-based models</strong> (Ultralytics), such as detection, segmentation, or pose.
+  </p>
+
+  <p>
+    Browse the supported tasks here:<br />
+    <a href="https://docs.ultralytics.com/tasks/" target="_blank" rel="noopener noreferrer">https://docs.ultralytics.com/tasks/</a>
+  </p>
+
+  <p><strong>Tip:</strong> your choice here affects how you annotate:</p>
+  <ul>
+    <li><strong>Detection</strong> → bounding boxes</li>
+    <li><strong>Segmentation</strong> → polygons/masks</li>
+    <li><strong>Pose</strong> → keypoints</li>
+  </ul>
+
+  <h2>4. Plan your dataset and choose videos</h2>
+
+  <p>
+    Pick videos that represent the full variability of what you want the model to handle.
+    The goal is to avoid training on a narrow “best-case” subset.
+  </p>
+  <ul>
+    <li>Include different backgrounds, lighting, camera angles, and distances.</li>
+    <li>Include easy and hard examples (small targets, partial visibility, motion blur, reflections, etc.).</li>
+    <li>Try to cover all relevant environments and recording conditions.</li>
+  </ul>
+
+  <h2>5. Start annotating</h2>
+
+  <p>
+    To get started with annotations, watch the example video tutorial first:<br />
+    <a href="https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/" target="_blank" rel="noopener noreferrer">https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/</a>
+  </p>
+
+  <h2>6. Parameters and shortcuts for annotations in TRex</h2>
+
+  <p>Use these parameters and shortcuts to set up annotations and move through the video and annotated frames:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>Shortcut / Menu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Show annotated frames in the timeline</td>
+        <td><strong>FOIs &gt; Annotated</strong> in the top-right menu</td>
+      </tr>
+      <tr>
+        <td>Play or pause the video</td>
+        <td><strong>Space bar</strong></td>
+      </tr>
+      <tr>
+        <td>Go to the next annotated frame</td>
+        <td><strong>M</strong></td>
+      </tr>
+      <tr>
+        <td>Go to the previous annotated frame</td>
+        <td><strong>N</strong></td>
+      </tr>
+      <tr>
+        <td>Add an annotation box</td>
+        <td>Hold <strong>Ctrl</strong> and click <strong>4 points</strong> with the left mouse button</td>
+      </tr>
+      <tr>
+        <td>Move one frame at a time</td>
+        <td><strong>Left / Right arrow keys</strong></td>
+      </tr>
+      <tr>
+        <td>Set detection type</td>
+        <td>Change <code>detect_format</code> depending on the type of annotation task you want to work with. Example types include object detection, segmentation, pose estimation, oriented bounding boxes, and classification. See the Ultralytics task documentation here:<br />
+          <a href="https://docs.ultralytics.com/tasks" target="_blank" rel="noopener noreferrer">https://docs.ultralytics.com/tasks</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Set annotation classes</td>
+        <td>Define <code>detect_class</code> with the classes you want to annotate, for example <code>bug</code>, <code>shark</code>, <code>person</code>, or any other target class relevant to your project.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>7. Save and export your annotations</h2>
+
+  <p>Once you have annotated your frames, save your work and export the dataset:</p>
+  <ul>
+    <li><strong>Menu &gt; Save config</strong></li>
+    <li><strong>Menu &gt; Save state</strong></li>
+    <li><strong>Menu &gt; Export annotations</strong> — annotations can be exported as <strong>YOLO</strong> or <strong>COCO</strong> format</li>
+  </ul>
+
+  <p>
+    To use this exported dataset to train a custom model, see:
+    <a href="https://github.com/albiangela/TRex-tutorials-data/blob/main/tutorial-pages/2-create-custom-model.rst" target="_blank" rel="noopener noreferrer">Custom model tutorial page</a>
+  </p>
+
+  <h2>8. Useful TRex resources</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Main website</td>
+        <td><a href="https://trex.run/" target="_blank" rel="noopener noreferrer">https://trex.run/</a></td>
+      </tr>
+      <tr>
+        <td>Installation</td>
+        <td>
+          This quick-start guide<br />
+          <a href="https://trex.run/docs/install.html" target="_blank" rel="noopener noreferrer">https://trex.run/docs/install.html</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Getting started with annotations</td>
+        <td>
+          This quick-start guide<br />
+          Example video: <a href="https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/" target="_blank" rel="noopener noreferrer">https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Training a custom model</td>
+        <td>
+          <a href="https://trex.run/docs/model_training.html" target="_blank" rel="noopener noreferrer">TRex model training documentation</a><br />
+          <a href="https://github.com/albiangela/TRex-tutorials-data/blob/main/tutorial-pages/2-create-custom-model.rst" target="_blank" rel="noopener noreferrer">Custom model tutorial page</a><br />
+          <a href="https://github.com/albiangela/train-custom-YOLO-Colab" target="_blank" rel="noopener noreferrer">Colab code for training a custom YOLO model</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Detections and tracking</td>
+        <td>
+          <a href="https://trex.run/docs/tutorials.html#tutorial-basics" target="_blank" rel="noopener noreferrer">TRex basics tutorials</a><br />
+          Our YouTube channel
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

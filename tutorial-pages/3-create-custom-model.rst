@@ -48,6 +48,7 @@ Alternatives - if you need the data to remain fully local:
 
 - **CVAT** (local or self-hosted)
 - **Label Studio** (local or self-hosted) - `tutorial <https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html>`_
+- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format. See `Creating Annotations with TRex <2-create-annotations.rst>`_ for the full walkthrough, or watch the `example video tutorial <https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/>`_ directly.
 
 Frame extraction recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,3 +101,8 @@ Dataset building is iterative. After your first training run:
 - Repeat: annotate → retrain → evaluate.
 
 If anything is unclear or you run into issues during setup, annotation, or export, let us know.
+
+Next steps
+----------
+
+If you run into tracking issues while using your model, check the `FAQ <4-FAQ.rst>`_.
