@@ -72,7 +72,7 @@ them ahead of time and save them somewhere you can find again on your laptop:
 
 - `Example videos for multi-object tracking <https://doi.org/10.17617/3.7F5MGE>`_
   — multi-individual videos used in :doc:`tutorials` and
-  :doc:`2-create-custom-model`.
+  :doc:`3-create-custom-model`.
 
 You can also browse and watch the
 `TRex YouTube channel <https://www.youtube.com/@TRexTracker>`_ in advance to

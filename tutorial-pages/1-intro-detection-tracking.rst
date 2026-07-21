@@ -144,4 +144,4 @@ Once the objects of interest are detected in each frame, the next step is to tra
 Next steps
 --------------------------------------
 
-If a custom model is needed, continue to `Creating Annotations with TRex <2-create-annotations.rst>`_.
+If a custom model is needed, continue to `Creating an Annotation Dataset <2-create-annotations.rst>`_.

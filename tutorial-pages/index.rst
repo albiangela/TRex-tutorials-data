@@ -47,14 +47,16 @@ along with.
   detecting and tracking individuals, tuning parameters, working with tracklets,
   correcting identities (manually and with Visual Identification), posture, and
   a second walkthrough using a YOLO pose model.
-- :doc:`2-create-custom-model` — when the built-in detection isn't enough:
-  collecting frames, annotating them, and training your own YOLO detection,
-  segmentation, or pose model.
+- :doc:`2-create-annotations` — when the built-in detection isn't enough:
+  choosing an annotation tool (including TRex's own built-in annotation
+  window), collecting frames, and labeling them.
+- :doc:`3-create-custom-model` — training your own YOLO detection,
+  segmentation, or pose model on the dataset you just annotated.
 
 Reference and help
 ------------------
 
-- :doc:`3-FAQ` — common problems with tracking, identity assignment, and
+- :doc:`4-FAQ` — common problems with tracking, identity assignment, and
   parameter tuning, with concrete things to try.
 
 .. toctree::
@@ -64,5 +66,6 @@ Reference and help
    install
    1-intro-detection-tracking
    tutorials
-   2-create-custom-model
-   3-FAQ
+   2-create-annotations
+   3-create-custom-model
+   4-FAQ

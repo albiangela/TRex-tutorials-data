@@ -1,46 +1,9 @@
-Creating Annotations with TRex
+Creating an Annotation Dataset
 =============================================
 
-This guide explains how to install TRex, open it, and use it to annotate frames for a custom detection/tracking model.
+This guide covers the general steps for creating an annotation dataset for a custom detection/tracking model, and then walks through the built-in annotation window in TRex in more detail.
 
-1) Install TRex
---------------------------------------
-
-First, install **Miniforge**, which is needed to create the TRex environment.
-
-Download Miniforge here: `<https://conda-forge.org/download/>`_
-
-Then open a terminal:
-
-- **Windows:** search for and open **Miniforge Prompt**
-- **macOS/Linux:** open **Terminal**
-
-Create a new TRex environment:
-
-.. code-block:: bash
-
-   conda create -n beta -c trex-beta trex
-
-When asked to proceed, type ``y`` and press **Enter**.
-
-For the full installation documentation, see the `TRex installation documentation <https://trex.run/docs/install.html>`_.
-
-2) Open TRex
---------------------------------------
-
-Activate the TRex environment:
-
-.. code-block:: bash
-
-   conda activate beta
-
-Start TRex:
-
-.. code-block:: bash
-
-   trex
-
-3) Decide what model you want to train
+1) Decide what model you want to train
 --------------------------------------
 
 Before creating an annotation dataset, decide which type of task you want to train.
@@ -55,7 +18,7 @@ Browse the supported tasks here: `Ultralytics YOLO Tasks <https://docs.ultralyti
    - **Segmentation** → polygons/masks
    - **Pose** → keypoints
 
-4) Plan your dataset and choose videos
+2) Plan your dataset and choose videos
 --------------------------------------
 
 Pick videos that represent the full variability of what you want the model to handle.
@@ -65,7 +28,7 @@ The goal is to avoid training on a narrow "best-case" subset.
 - Include easy and hard examples (small targets, partial visibility, motion blur, reflections, etc.).
 - Try to cover all relevant environments and recording conditions.
 
-5) Create an annotation dataset (extract frames + label)
+3) Create an annotation dataset (extract frames + label)
 --------------------------------------------------------
 
 The first practical step is to create an annotation dataset. This means:
@@ -83,7 +46,7 @@ Alternatives - if you need the data to remain fully local:
 
 - **CVAT** (local or self-hosted)
 - **Label Studio** (local or self-hosted) - `tutorial <https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html>`_
-- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format (see the sections below).
+- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format. See `Annotating with TRex`_ below for the full walkthrough.
 
 Frame extraction recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,13 +66,32 @@ Annotation guidelines
    Consistency matters, the same visual scenario should be labeled the same way across the dataset.
    This reduces confusion for the model and usually improves performance.
 
-6) Start annotating in TRex
---------------------------------------
+4) Export the dataset in YOLO format
+------------------------------------
+
+Once annotation is complete, export your dataset in a YOLO-compatible format.
+Most tools offer an export option for YOLO/Ultralytics.
+
+- Keep a clear ``train/val/test`` split (usually 70%/20%/10% of the annotated dataset).
+- Verify that labels align with images after export (spot-check a few samples).
+
+Annotating with TRex
+--------------------
+
+If you'd rather annotate directly inside TRex instead of using Roboflow, CVAT, or Label Studio, TRex has a built-in annotation window described below.
+
+Install and open TRex
+^^^^^^^^^^^^^^^^^^^^^^
+
+See `Installation and Workshop Setup <install.rst>`_ to install and open TRex.
+
+Start annotating in TRex
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To get started with annotations, watch the example video tutorial first: `<https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/>`_
 
-7) Parameters and shortcuts for annotations in TRex
-----------------------------------------------------
+Parameters and shortcuts for annotations in TRex
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use these parameters and shortcuts to set up annotations and move through the video and annotated frames:
 
@@ -136,8 +118,8 @@ Use these parameters and shortcuts to set up annotations and move through the vi
    * - Set annotation classes
      - Define ``detect_class`` with the classes you want to annotate, for example ``bug``, ``shark``, ``person``, or any other target class relevant to your project.
 
-8) Save and export your annotations
---------------------------------------
+Save and export your annotations in TRex
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you have annotated your frames, save your work and export the dataset:
 
