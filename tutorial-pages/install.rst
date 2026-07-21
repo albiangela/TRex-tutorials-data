@@ -6,12 +6,12 @@ Installation and Workshop Setup
 ===============================
 
 This page covers everything you need to do **before the workshop**: install
-|trex|, download the example videos, and (optionally) bookmark the analysis
+|trex|_, download the example videos, and (optionally) bookmark the analysis
 notebooks you'll use afterwards.
 
 .. epigraph::
 
-   **Heads up:** please install |trex| and download the example dataset *before*
+   **Heads up:** please install |trex|_ and download the example dataset *before*
    the workshop starts — installation can take a few minutes and the dataset is
    a couple of GB. If you don't get to it in time, we'll bring a hard drive with
    all the videos.
@@ -19,7 +19,7 @@ notebooks you'll use afterwards.
 Install TRex
 ------------
 
-|trex| is distributed through `conda-forge`-style channels, so installation is
+|trex|_ is distributed through `conda-forge`-style channels, so installation is
 the same on Windows, macOS, and Linux.
 
 1. **Install Miniforge.** Download and install Miniforge from
@@ -48,7 +48,7 @@ the same on Windows, macOS, and Linux.
       conda create -n track -c trexing trex
 
 3. **Activate the environment.** Every time you open a new terminal and want
-   to use |trex|, run:
+   to use |trex|_, run:
 
    .. code-block:: bash
 
@@ -60,7 +60,7 @@ the same on Windows, macOS, and Linux.
 
       trex
 
-That's it — you should now see the |trex| welcome screen. If anything goes
+That's it — you should now see the |trex|_ welcome screen. If anything goes
 wrong, check the `TRex website <https://trex.run>`_ or the
 `GitHub repository <https://github.com/mooch443/trex>`_ for support.
 
@@ -81,7 +81,7 @@ get a feel for the interface before the workshop.
 After tracking: analysis resources
 ----------------------------------
 
-Once you've tracked a video with |trex|, the exported data (npz / csv) is
+Once you've tracked a video with |trex|_, the exported data (npz / csv) is
 straightforward to load and analyze in Python. We've prepared notebooks and
 example code to get you started:
 
