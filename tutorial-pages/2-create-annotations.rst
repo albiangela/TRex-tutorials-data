@@ -65,12 +65,50 @@ The goal is to avoid training on a narrow "best-case" subset.
 - Include easy and hard examples (small targets, partial visibility, motion blur, reflections, etc.).
 - Try to cover all relevant environments and recording conditions.
 
-5) Start annotating
+5) Create an annotation dataset (extract frames + label)
+--------------------------------------------------------
+
+The first practical step is to create an annotation dataset. This means:
+extracting a set of frames from your videos and drawing labels around the target(s) of interest.
+
+Common annotation tools
+^^^^^^^^^^^^^^^^^^^^^^^
+
+- `Roboflow <https://roboflow.com/>`_ Fast and user-friendly.
+
+.. note::
+    Roboflow has a free version, but uploaded data becomes **public** (visible in the “Roboflow universe”). New accounts typically include **14 days of private projects**. `Roboflow Setup Guide <https://github.com/albiangela/TRex-tutorials-data/blob/main/Roboflow-annotations_and_YOLO-training_tutorial.pdf>`_
+
+Alternatives - if you need the data to remain fully local:
+
+- **CVAT** (local or self-hosted)
+- **Label Studio** (local or self-hosted) - `tutorial <https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html>`_
+- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format (see the sections below).
+
+Frame extraction recommendations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- **Extract ~25-30 frames per video** as a starting point.
+- It can help to extract more than needed, then select frames to annotate roughly at random.
+- Annotate frames from most videos (don't concentrate on just a few).
+
+Annotation guidelines
+^^^^^^^^^^^^^^^^^^^^^
+
+- Label **all visible targets** in each frame (or all visible parts, if partially occluded).
+- Make bounding boxes **tight** around the target with as little background as possible.
+- Be consistent in how you treat partial visibility and edge-of-frame cases.
+
+.. note::
+   Consistency matters, the same visual scenario should be labeled the same way across the dataset.
+   This reduces confusion for the model and usually improves performance.
+
+6) Start annotating in TRex
 --------------------------------------
 
 To get started with annotations, watch the example video tutorial first: `<https://keeper.mpdl.mpg.de/f/9a7d49aabe724e5aaf71/>`_
 
-6) Parameters and shortcuts for annotations in TRex
+7) Parameters and shortcuts for annotations in TRex
 ----------------------------------------------------
 
 Use these parameters and shortcuts to set up annotations and move through the video and annotated frames:
@@ -98,7 +136,7 @@ Use these parameters and shortcuts to set up annotations and move through the vi
    * - Set annotation classes
      - Define ``detect_class`` with the classes you want to annotate, for example ``bug``, ``shark``, ``person``, or any other target class relevant to your project.
 
-7) Save and export your annotations
+8) Save and export your annotations
 --------------------------------------
 
 Once you have annotated your frames, save your work and export the dataset:
