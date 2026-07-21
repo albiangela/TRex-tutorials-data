@@ -21,12 +21,15 @@ The usual workfow is:
 1) Recording
 --------------------------------------
 
-Recording quality is the most important factor for good tracking data. 
-We don't provide full recording support, but these guidelines help:
+Recording quality is the most important factor for good tracking data.
+Here are a few guidelines to follow:
 
 - Light: Use as much light as your system allows. If visible light is disruptive, consider infrared (IR) illumination.
 - Camera: Dedicated computer-vision cameras (*e.g.*, Basler, Ximea) are ideal, but webcams, GoPros, DSLRs, or phones can work, depending on target size, speed, distance, and lighting.
-- Settings help: Knowing aperture, frame rate, exposure time, and focus improves data quality. Frame rate for example is a trade-off: Higher fps captures fast motion but creates larger files.
+- Settings help: Knowing aperture, frame rate, exposure time, and focussing the camera properly improves data quality. Most of these settings are *trade-offs*, and here are a few examples: 
+
+   - You may want more exposure in your image, but have to trade in depth of field. 
+   - Higher fps captures faster motion, but reduces the exposure per frame and takes up much more storage (more images = larger disk size).
 
 Example: Walking locusts may be fine at ~10 fps, but you might miss a full jump. Choose fps based on the behaviors you need to resolve.
 
@@ -46,7 +49,6 @@ Example: Walking locusts may be fine at ~10 fps, but you might miss a full jump.
 After collecting a video, the next decision to take is how to detect your objects of interest (*e.g.* animals, robots, inanimate objects).
 |DetectionBlue| means finding unidentified objects in each single frame of a video—the requirement for the next step: tracking them.
 
-
 .. figure:: ./images/TRex-workflow.004.jpeg
    :alt: Short alt text
    :align: center
@@ -56,7 +58,7 @@ After collecting a video, the next decision to take is how to detect your object
 
 
 In TRex, during the detection phase, the recorded video is converted into an optimized file format (.pv extension), which contains all necessary information for tracking.
-There are multiple ways of detecting individuals. The most common are background subtraction and using a custom model.
+There are multiple ways of detecting individuals. The most common are background subtraction and machine learning.
 
 .. raw:: html
 
@@ -68,8 +70,7 @@ There are multiple ways of detecting individuals. The most common are background
    </div>
 
 
-For example if you have a static camera and a high contrast between the objects of interest and the background, background subtraction is a fast and easy way to detect objects.
-If your video is more complex (moving camera, low contrast, changing background), a custom model is likely needed.
+Background subtraction is very fast and easy to set up if you have a static camera and a high contrast between the objects of interest and the background. If your video is more complex (moving camera, low contrast, changing background), machine learning is likely needed. This can be done with either a pretrained freely available model, or a custom trained model.
 
 .. figure:: ./images/TRex-workflow.006.jpeg
    :alt: Short alt text
@@ -131,7 +132,7 @@ You can preview each one in the page before downloading the source video file.
 --------------------------------------
 
 Once the objects of interest are detected in each frame, the next step is to track them across frames.
-|TRackinggr| means entities in one frame with entities in a future frame.
+|TRackinggr| means matching entities in one frame with entities in a future frame.
 
 
 .. figure:: ./images/TRex-workflow.015.jpeg

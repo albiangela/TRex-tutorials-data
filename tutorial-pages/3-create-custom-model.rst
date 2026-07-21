@@ -17,8 +17,8 @@ After exporting your annotation dataset, you can train a custom YOLO-based model
   `Custom Training Colab Notebook <https://github.com/albiangela/train-custom-YOLO-Colab>`_
 
 .. note::
-   If your targets are small, tiling can help. You can tile images before annotation or tile annotated images before training (for example using the Colab notebook above).
-   In TRex, you can enable tiling during detection, if you trained a tiled model.
+   If your targets are small, tiling can help. You can tile images before annotation or tile annotated images before training (for example using the Colab notebook above). Be aware that this may produce subtle artifacts at the tile boundaries.
+   In TRex, you can enable tiling during detection in the Detection configuration screen (make sure you also trained on tiles if you want to use the model with tiling based detection enabled).
 
 2) Iterate
 ----------

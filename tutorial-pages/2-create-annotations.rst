@@ -1,7 +1,7 @@
 Creating an Annotation Dataset
 =============================================
 
-This guide covers the general steps for creating an annotation dataset for a custom detection/tracking model, and then walks through the built-in annotation window in TRex in more detail.
+This guide covers the general steps for creating an annotation dataset for a custom detection/tracking model, and then walks through the tools annotation built into TRex in more detail.
 
 1) Decide what model you want to train
 --------------------------------------
@@ -21,8 +21,8 @@ Browse the supported tasks here: `Ultralytics YOLO Tasks <https://docs.ultralyti
 2) Plan your dataset and choose videos
 --------------------------------------
 
-Pick videos that represent the full variability of what you want the model to handle.
-The goal is to avoid training on a narrow "best-case" subset.
+Pick videos that represent the full variability of your problem space.
+The goal is to avoid training on a narrow "best-case" subset, but to show it the entire landscape of what you expect it to handle later on.
 
 - Include different backgrounds, lighting, camera angles, and distances.
 - Include easy and hard examples (small targets, partial visibility, motion blur, reflections, etc.).
@@ -31,8 +31,7 @@ The goal is to avoid training on a narrow "best-case" subset.
 3) Create an annotation dataset (extract frames + label)
 --------------------------------------------------------
 
-The first practical step is to create an annotation dataset. This means:
-extracting a set of frames from your videos and drawing labels around the target(s) of interest.
+The first practical step is to create an annotation dataset. This means extracting a set of frames from your videos and drawing labels around the target(s) of interest.
 
 Common annotation tools
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -46,7 +45,9 @@ Alternatives - if you need the data to remain fully local:
 
 - **CVAT** (local or self-hosted)
 - **Label Studio** (local or self-hosted) - `tutorial <https://alexhang212.github.io/YOLO_Behaviour_Repo/annotation.html>`_
-- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format. See `Annotating with TRex (UNDER DEVELOPMENT)`_ below for the full walkthrough.
+- **TRex** (built-in annotation) - annotate directly inside TRex while reviewing your video, then export the dataset as YOLO or COCO format.
+
+Annotations in TRex have a slightly different workflow compared to the other tools. Below you'll see instructions that apply to many of these tools, also TRex, as well as some general advice. See `Annotating with TRex (UNDER DEVELOPMENT)`_ below for the full walkthrough the TRex-specific system.
 
 Frame extraction recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
