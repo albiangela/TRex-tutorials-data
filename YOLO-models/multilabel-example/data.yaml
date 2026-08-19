@@ -1,0 +1,11 @@
+train: train/images
+val: val/images
+test: null
+names:
+  0: bogong
+  1: coleoptera
+  2: hymenoptera
+  3: moth_na
+  4: objects
+  5: prob_bogong
+channels: 3
